@@ -62,7 +62,13 @@ The Environment will be represented as textfile, where
 <ul>
   <li>x corresponds to obstacles</li>
   <li>c corresponds to the vacuum-cleaner</li>
-  <li>digits corresponds to the number of dirts in the corresponding grid</li>
- <li>j corresponds to the jumper
+  <li>each digit corresponds to one of your opponents where/li>
+  <ul>
+  <li> even digit opponents move randomly
+  <li> odd digit opponents move optimally
+  </ul>
+ <li>. (dot) corresponds to the dirt 
 </ul>
+
+
   
