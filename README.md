@@ -15,9 +15,7 @@ where `<search-type>` might be one of the following:
 If <n-actions> is 5, the search will be as follows: MAX acts, MIN1, MIN2, MIN3 acts, MAX acts, and
 the search stops, and the utility values after the second MAX action will be used. 
 
-`<init-file>` will be a text file gives all details related to the initial environment.
-
-An example environment can be found in [init.txt](https://github.com/skarussel/Single-Agent-Search/blob/master/init.txt).
+`<init-file>` will be a text file gives all details related to the initial environment. An example environment can be found in [init.txt](https://github.com/skarussel/Multi-Agent-Search/blob/master/init1.txt).
 
 The output of the programm is:
 <ul>
@@ -28,7 +26,7 @@ The output of the programm is:
 
 ## Introduction to the Environment:
 
-The [Environment](https://github.com/skarussel/Single-Agent-Search/blob/master/init.txt) is as follows:
+The [Environment](https://github.com/skarussel/Multi-Agent-Search/blob/master/init1.txt) is as follows:
 <ul>
   <li>The environment is NxM grid world</li>
   <li>Each grid in the environment might contain</li>
