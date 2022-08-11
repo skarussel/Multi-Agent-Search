@@ -21,11 +21,10 @@ An example environment can be found in [init.txt](https://github.com/skarussel/S
 
 The output of the programm is:
 <ul>
- <li>the number of expanded nodes
- <li>the action sequence to achieve the goal
- <li>the heuristic function value if the search-type is A*2
+ <li>the optimal action of the agent in its first move
+ <li>the expected minmax value of the root node
+ <li>number of calls for utility function
 </ul>
-
 
 ## Introduction to the Environment:
 
@@ -57,7 +56,6 @@ right. An agent coming from up is transformed to the grid down.</li>
 </ul>
 
 
-
 The Environment will be represented as textfile, where
 <ul>
   <li>x corresponds to obstacles</li>
@@ -70,5 +68,10 @@ The Environment will be represented as textfile, where
  <li>. (dot) corresponds to the dirt 
 </ul>
 
+## Utility Function
+
+The utility value at any node is calculated as follows:
+* If the vacuum cleaner is in the same grid with one of the any other opponent, utility is set to -100 and the episode ends.
+* Otherwise, utility = (the number of dirts cleaned by our cleaner – the number of dirts cleaned by the opponents)
 
   
